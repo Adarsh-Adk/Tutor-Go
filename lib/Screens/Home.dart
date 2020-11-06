@@ -46,8 +46,8 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Tutor Go"),),
-      body: _loading?Center(child: CircularProgressIndicator()):_cont()
+        appBar: AppBar(title: Text("Tutor Go"),),
+        body: _loading?Center(child: CircularProgressIndicator()):_cont()
 
     );
   }

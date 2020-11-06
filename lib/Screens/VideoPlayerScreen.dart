@@ -1,5 +1,6 @@
 import 'package:Tutor_Go/Models/VideosModel.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class VideoPlayerScreen extends StatefulWidget {
@@ -38,6 +39,9 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
 }
 @override
   void dispose() {
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]);
    _controller.dispose();
     super.dispose();
   }
